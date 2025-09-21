@@ -1,0 +1,184 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+
+}
+
+.choose-major-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.engineering-card{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #E5E1EE; /* Lavender (web) */
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.engineering-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.business-card{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #E2EFF7; /* Alice Blue */
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.business-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.math-card{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #DFFDFF; /* Light cyan */
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.math-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.sciences-card{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #B8DEEF; /* Columbia blue */
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.sciences-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}  
+
+.computer-science-card{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #90BEDE; /* Powder blue */
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}   
+.computer-science-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}   
+
+.social-sciences-card{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #86D7E1; /* Non Photo blue */
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.social-sciences-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.arts-humanities-card{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    background-color: #90F3FF; /* Electric blue */
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}   
+.arts-humanities-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.majors{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* space between cards, adjust as needed */
+    width: 100%;
+}
+
+/* First 4 cards in the first row */
+.engineering-card, .business-card, .math-card, .sciences-card {
+    order: 1;
+}
+
+/* Last 3 cards in the second row */
+.computer-science-card, .social-sciences-card, .arts-humanities-card {
+    order: 2;
+}
+
+.choose-major{
+    margin: 20px 20%;
+}
+
+/* Card link styles */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Card hover effect to show it's clickable */
+.engineering-card:hover,
+.business-card:hover,
+.computer-science-card:hover,
+.math-card:hover,
+.sciences-card:hover,
+.social-sciences-card:hover,
+.arts-humanities-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}

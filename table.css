@@ -1,0 +1,123 @@
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 30px; /* Added padding around the table */
+    -webkit-overflow-scrolling: touch; /*allow users to acces on phone*/
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.data-table {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    font-size: 13px;
+    width: 100%;
+}
+.data-table-bs{
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    font-size: 13px;
+    width: 100%;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(12.5%); 
+}
+
+.data-table thead th {
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 60px; 
+    padding: 15px 10px;
+    white-space: normal; 
+    vertical-align: middle;
+}
+/* have neutral colours*/
+.data-table .rank-row td {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 2px solid #ddd;
+    background-color: #f8f8f8;
+        color: #333;
+
+}
+
+.data-table .rank-row th {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.data-table tbody tr:nth-child(even):not(.rank-row) {
+    background-color: #f5f5f5;
+}
+
+.data-table tbody tr:hover:not(.rank-row) {
+    background-color: #e6f7ff;
+}
+
+
+.data-table tbody th {
+    font-weight: 600;
+    text-align: left;
+    width: calc(100% / 8); 
+    color: #333;
+    background-color: #f2f2f2;
+    border-right: 2px solid #ddd;
+    position: relative;
+}
+
+/* Center data cells */
+.data-table td {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .data-table {
+        font-size: 12px;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 8px 10px;
+    }
+}
+
+.note-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.note-section h4 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.note-section ul {
+    padding-left: 20px;
+}
+
+.note-section li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
